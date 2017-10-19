@@ -7267,7 +7267,7 @@ textarea.md-textarea {
     -webkit-transition: color 0.2s;
     transition: color 0.2s;
     position: absolute;
-    width: 3rem;
+    width: 1rem;
     font-size: 2rem; }
     .md-form .prefix ~ input, .md-form .prefix ~ textarea {
       margin-left: 3rem;
