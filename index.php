@@ -24,6 +24,8 @@
     	$query=mysqli_query($conn,$sql);
     	if($query)
         	echo 'Registration successful';
+        else
+        	echo 'USN already registered';
     	mysqli_close($conn);
     }
     else
