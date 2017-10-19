@@ -13,7 +13,7 @@
 	$mem2_name = $_POST['mem2_name'] ;
 
 //-->>
-	if(!empty($mem1_name) && !empty($mem1_contact) && !empty($mem1_USN) && !empty($mem2_name) && !empty($mem2_USN) && !empty($mem2_contact)){
+	if(!empty($mem1_name) && !empty($mem1_contact) && !empty($mem1_USN) && !empty($mem1_email) && !empty($mem2_name) && !empty($mem2_USN) && !empty($mem2_contact) && !empty($mem2_email)){
 		$username = 'root';
     	$password = '';
     	$db = 'Reverse_Coding';
