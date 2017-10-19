@@ -13,8 +13,21 @@
 	$mem2_name = $_POST['mem2_name'] ;
 
 //-->>
-
-
+	if(!empty($mem1_name) && !empty($mem1_contact) && !empty($mem1_USN) && !empty($mem2_name) && !empty($mem2_USN) && !empty($mem2_contact)){
+		$username = 'root';
+    	$password = '';
+    	$db = 'Reverse_Coding';
+    	$conn = mysqli_connect('localhost',$username,$password,$db) or die('unable to connect');
+    	if($conn)
+      	  echo 'successfully connected to the DB<br>';
+    	$sql = "insert into register (mem1_email,mem1_USN,mem1_contact,mem1_name,mem2_email,mem2_USN,mem2_contact,mem2_name) values ('$mem1_email','$mem1_USN','$mem1_contact','$mem1_name','$mem2_email','$mem2_USN','$mem2_contact','$mem2_name')";
+    	$query=mysqli_query($conn,$sql);
+    	if($query)
+        	echo 'Registration successful';
+    	mysqli_close($conn);
+    }
+    else
+    	die('One or More required fields are empty');
 
 	//EMAIL VALIDATION
 
