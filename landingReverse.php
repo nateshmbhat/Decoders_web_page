@@ -11,6 +11,8 @@
 	<link rel="icon" href="../commonResources/img/title.png">
     <?php require_once "../commonResources/includeCSS.php";?>
 	 <link href="../commonResources/css/um-template.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="../commonResources/css/material-design-iconic-font/css/material-design-iconic-font.min.css">
+
 
 
 </head>
@@ -45,8 +47,11 @@
 
   <div class="jumbotron container">
 
-    <!--  <img src="C:\xampp\htdocs\img\decoder.jpg" class="img-fluid center-block pagination-centered" width="350" height="350" >-->
-      <h1 class="h1-responsive">REVERSE CODING</h1>
+    <button class="btn btn-default btn-lg"><i class="zmdi zmdi-rotate-right zmdi-hc-spin"></i></button>
+    <button class="btn btn-default btn-lg"><i class="zmdi zmdi-rotate-left zmdi-hc-spin-reverse"></i></button>
+      <h1 class="h1-responsive text-center">REVERSE CODING</h1>
+
+      <p class="text-left">DeCoders - the programming club of SIT is cming up with its event "REVERSE CODING" on 12th november.Its open for all four years.</p>
       <h1>Rules</h1>
       <ul>
         <li>mihbjnbh</li>
@@ -65,3 +70,8 @@
       </p>
       <button type="button" class="btn btn-yellow">REGISTER</button>
   </div>
+
+
+  <!--footer start-->
+        <?php require_once '../commonResources/footer.inc.php';?>
+  <!--footer end-->
