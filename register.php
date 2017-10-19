@@ -1,7 +1,7 @@
 
 <?php
 
-//something is wrong in this code...needs some debugging>Natesh
+//Working Code
 
     $username = 'root';
     $password = '';
@@ -17,7 +17,7 @@
     $musn=$_POST['musn'];
     $mcontact=$_POST['mcontact'];
     $memail=$_POST['memail'];
-    $sql = "insert into 'register' (lusn,lname,lcontact,lemail,musn,mname,mcontact,meamil) values ('$lname','$lusn','$lcontact','$lemail','$mname','$musn','$mcontact','$memail')";
+    $sql = "insert into register (lusn,lname,lcontact,lemail,musn,mname,mcontact,memail) values ('$lusn','$lname','$lcontact','$lemail','$musn','$mname','$mcontact','$memail')";
     $query=mysqli_query($conn,$sql);
     if($query)
         echo 'data inserted';
