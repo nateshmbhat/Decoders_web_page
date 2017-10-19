@@ -18,10 +18,16 @@
 
 	//EMAIL VALIDATION
 
-	
-
-
-
+	if (!filter_var($mem1_email, FILTER_VALIDATE_EMAIL)) {
+    echo "<p>Invalid Email address for Member 1</p>" ; 
+    exit(0); 
+}	
+		if (!filter_var($mem2_email, FILTER_VALIDATE_EMAIL)) {
+    echo "<p>Invalid Email address for Member 2</p>" ; 
+    exit(1) ; 
+}
 
 	//-->>
+
+
  ?>
