@@ -1,6 +1,5 @@
-<?php
+<?php 
 
-if(mysql_connect('localhost' , 'root' , '') )
-	echo "My stuff" ;
+echo $_POST ;
 
-?>
+ ?>

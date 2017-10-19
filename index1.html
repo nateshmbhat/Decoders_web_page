@@ -70,7 +70,10 @@
 
 <!--  form     -->
 <!-- Form contact -->
-<div class="container" class="text-center"><form>
+<div class="container" class="text-center">
+
+    <form name='contactform' action="index.php" method="POST">
+
     <div class="text-center">
     <h2>Register</h2>
     </div>
@@ -78,25 +81,25 @@
 
     <div class="md-form">
         <i class="fa fa-user prefix grey-text"></i>
-        <input type="text" id="form3" style="width: 100px; padding: 2px;" class="form-control">
+        <input name="mem1_name" type="text" id="form3" style="width: 100px; padding: 2px;" class="form-control">
         <label for="form3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your name</label>
     </div>
 
     <div class="md-form">
         <i class="fa fa-envelope prefix grey-text"></i>
-        <input type="text" id="form2" style="width: 100px; padding: 2px;" class="form-control">
+        <input type="text" name="mem1_email" id="form2" style="width: 100px; padding: 2px;" class="form-control">
         <label for="form2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your email</label>
     </div>
 
     <div class="md-form" >
         <i class="fa fa-tag prefix grey-text"></i>
-        <input type="text"  class="form-control" style="width: 100px; padding: 2px;" />
+        <input type="text"  name="mem1_USN" class="form-control" style="width: 100px; padding: 2px;" />
         <label for="form34">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;USN</label>
     </div>
 
     <div class="md-form">
         <i class="fa fa-pencil prefix grey-text"></i>
-        <input type="text" id="form8" class="md-textarea" style="height: 50;width: 100px; padding: 2px;""/>
+        <input type="text" id="form8" name="mem1_contact" class="md-textarea" style="height: 50;width: 100px; padding: 2px;""/>
         <label for="form8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact No</label>
     </div>
 
@@ -111,31 +114,33 @@
 
     <div class="md-form">
         <i class="fa fa-user prefix grey-text"></i>
-        <input type="text" id="form3" style="width: 100px; padding: 2px;" class="form-control">
+        <input type="text" id="form3" name="mem2_name" style="width: 100px; padding: 2px;" class="form-control">
         <label for="form3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your name</label>
     </div>
 
     <div class="md-form">
         <i class="fa fa-envelope prefix grey-text"></i>
-        <input type="text" id="form2" style="width: 100px; padding: 2px;" class="form-control">
+        <input type="text" id="form2" name="mem2_email" style="width: 100px; padding: 2px;" class="form-control">
         <label for="form2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your email</label>
     </div>
 
     <div class="md-form" >
         <i class="fa fa-tag prefix grey-text"></i>
-        <input type="text"  class="form-control" style="width: 100px; padding: 2px;" />
+        <input type="text"  class="form-control"  name="mem2_USN" style="width: 100px; padding: 2px;" />
         <label for="form34">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;USN</label>
     </div>
 
     <div class="md-form">
         <i class="fa fa-pencil prefix grey-text"></i>
-        <textarea type="text" id="form8" class="md-textarea" style="height: 50;width: 100px; padding: 2px;""></textarea>
+        <textarea type="text" id="form8" name="mem2_contact" class="md-textarea" style="height: 50;width: 100px; padding: 2px;""></textarea>
         <label for="form8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact No</label>
     </div>
 
     <div >
         <button class="btn btn-unique">Register<i class="fa fa-paper-plane-o ml-1"></i></button>
     </div>
+
+</form>
 
 <!--           -->
 
