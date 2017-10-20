@@ -15,6 +15,14 @@
         $username = 'root';
         $password = '';
         $db = 'Reverse_Coding';
+        if (!filter_var($mem1_email, FILTER_VALIDATE_EMAIL)) {
+           echo "<p>Invalid Email address for Member 1</p>" ; 
+            exit(0); 
+        }   
+        if (!filter_var($mem2_email, FILTER_VALIDATE_EMAIL)) {
+            echo "<p>Invalid Email address for Member 2</p>" ; 
+            exit(1) ; 
+        }
         $conn = mysqli_connect('localhost',$username,$password,$db) or die('unable to connect');
         if($conn)
           echo 'successfully connected to the DB<br>';
@@ -30,14 +38,7 @@
         die('One or More required fields are empty');
 
 	
-	if (!filter_var($mem1_email, FILTER_VALIDATE_EMAIL)) {
-	    echo "<p>Invalid Email address for Member 1</p>" ; 
-	    exit(0); 
-	}	
-			if (!filter_var($mem2_email, FILTER_VALIDATE_EMAIL)) {
-	    echo "<p>Invalid Email address for Member 2</p>" ; 
-	    exit(1) ; 
-	}
+	
 
 	
 	//EMAIL VALIDATION
